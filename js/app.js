@@ -105,7 +105,7 @@ while(trials< 5 ){
     trials++;
     //console.log('too high, try again',' trials = ', trials);
   }
-  if(guessAge >= 24 && guessAge<30){
+  if(guessAge > 24 && guessAge<30){
     alert('your guessing is high, try again');
     trials++;
     //console.log('your guessing is high, try again',' trials = ', trials);
