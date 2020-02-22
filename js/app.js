@@ -116,22 +116,22 @@ function carGuessing(){
   var guessCar =prompt('Can you guess one of my favourits cars').toUpperCase();
   var trueCar = 0;
   for(var carrTrials = 0 ;carrTrials !== 5 ;carrTrials++ ){
-    for(var k = 0; k <4 /*cars.length=4*/ ; k++ ){
+    for(var k = 0; k <cars.length ; k++ ){
       if(guessCar === cars[k]){
         trueCar = 1;
       }}
     if(trueCar === 1){
       score++;
-      alert('Hello ' + userName + ' my favourite cars ',cars ,' and your final score = ',score);
-      var mycars = document.getElementById('mycars');
-      mycars.append( 'Hello ' + userName + ' my favourite cars ',cars ,' and your final score = ',score);
-      var scoreblock = document.getElementById('scorepre');
-      scoreblock.append(score);
       break;
     }
     guessCar = prompt('Sorry you are wrong, Can you guess again?').toUpperCase();
 
-  }}
+  }
+  var mycars = document.getElementById('mycars');
+  mycars.append( 'Hello ' + userName + ' my favourite cars ',cars ,' and your final score = ',score);
+  var scoreblock = document.getElementById('scorepre');
+  scoreblock.append(score);
+}
 
 movies();
 degrees();
