@@ -1,88 +1,458 @@
-body{
+.body1{
     background-color: cornsilk;
+    width: 95%;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/98/Andromeda_Galaxy_%28with_h-alpha%29.jpg);
+    transition: 20s;
+    background-position-x: -2000px;
 }
-main{
-    padding: 10px;
-    margin: 20px; 
-    width: 100%;
-    height: 500px;
+.body1:hover{
+ background-position-x: 2000px;  
 }
-header{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTb68eE6YBrxP7BKhxNW3E6ygixQhhnfdqEfgmW9DrRNMuDsPVX");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 10%;
-    margin: 20px;
-    border-radius: 80px;
+
+.body1 header{
+    margin: 10px;
+    border-radius: 40px;
+    position: fixed;
+    top: 0px;
+    /*background-color: rgb(182, 142, 83);*/
+    background-image: linear-gradient(to right,black,darkgray );
+    width: 95%;
+    border: papayawhip dotted;
+    transition: 1s;
 }
-footer{
-    text-align: center;
-    border: coral 2px solid;
+.body1 header:hover{
+    background-image: linear-gradient(to right,darkgray,black,darkgray );
     
 }
-footer p{
+.body1 main{
+    padding: 10px;
+    margin: 200px 70px; 
+    height: 1000px;
+    border: dotted rgb(109, 93, 64);
+}
+.body1 nav{
     margin: 10px;
+    text-align: left;
 }
-nav{
-    border: dotted 2px chocolate;
-    margin: 10px;
-}
-nav ul{
-    text-align: center;
-    margin: 20px;
-    font-size: 20px;
-}
-nav ul li{
-    display: inline-block;
-    padding: 20px;
-}
-a{
+.body1 nav a{
     text-decoration: none;
-
+    color: white;
 }
-h1{
-    color:red;
+.body1 .circle{
+    display: inline-block;
+    width: 100px;
+    padding: 50px 0;
+    margin:20px 200px 20px 20px;
+    background-color: rgb(158, 158, 238);
+    border-radius: 50px;
+    line-height: 0;
+    cursor: pointer;
+    transition: 1s;
+    text-align: center;
+    position: relative;
+    left: 240px;
+}
+.body1 .circle:hover{
+    background-color: rgb(82, 82, 231);
+    transform: rotate(360deg);
+}
+.body1 .circle a{
+    color: white;
+    text-decoration: none;
+}
+
+.body1 .colorBox img{
+    width: 50px;
+    height: 50px;
+}
+/********************************/
+.body1 .myphoto{
+  /*  background-color: teal;*/
+    height: 280px;
+    text-align: center;
+    border: rgb(109, 93, 64) dotted;
+}
+.body1 .me{
+    height: 200px;
+    border-radius: 50px;
+    transition: 0.5s;
+    padding: 10px;
+}
+.body1 .info{
+    width: 149px;
+    height: 47px;
+    border-top: 1px solid rgb(230, 173, 67);
+    opacity: 0;
+    transition: 1s;
+}
+.body1 .myname{
+    text-align: center;
+    width: 240px;
+    left: 450px;
+    top: 10px;
+    position: relative;
+}    
+.body1 .edu{
+    text-align: left;
+    bottom: 140px;
+    left:310px;
+    position: relative;
+}
+.body1 .work{
+    text-align: right;
+    bottom: 190px;
+    left:650px;
+    position: relative;
+}
+.body1 .desc{
+    color: white;
+    margin: 0;
+}
+
+.body1 .first:hover {
+    transform: translateX(200px);
+}
+.body1 .second:hover{
+    transform: translateX(-200px); 
+}
+.body1 .myname:hover{
+    opacity: 1;
+}
+.body1 .edu:hover{
+    opacity: 1;
+    }
+.body1 .work:hover{
+    opacity: 1;
+}
+.body1 .me:hover ~ .edu,.body1 .me:hover ~ .info,.body1 .me:hover ~ .myname {
+    opacity: 1;
+}
+/*******************************************/
+.body1 .aboutMe{
+    margin: 10px;
+    padding: 20px;
+    height: 449px;
+    width: 90%;
+    line-height: 20px;
+}
+.body1 #aboutMeTitle{
+    color: rgb(121, 114, 112);
+    font-size: xx-large;
+}
+
+.body1 footer{
+    text-align: center;
+    border: coral 2px solid;
+    margin: 15px;
+    
+}
+.body1 footer p{
+    margin: 10px;
+    font-size: larger;
+}
+.body1 span img{
+    height: 40px;
+    width: 40px;
+}
+
+.body1 p{
+    color: rgb(214, 169, 86); 
+    margin: 20px;
+}
+.body1 #msg{
+    text-align: center;
+    display: block;
+    font-size: larger;
+    color: rgb(214, 169, 86);
+}
+.body1 #mycars{
+     text-align: center;
+     display: block;
+     font-size: small;
+     color: rgb(158, 158, 238);
+     margin: 20px;
+ }
+ .body1 #score{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: dotted #6d5d40 8px;
+    top: 615px;
+    right: 152px;
+ }
+ .body1 .scorep{
+     color: rgb(214, 169, 86);;
+     font-size: 28px;
+     text-align: center;
+ }
+ .body1 ol li{
+     margin: 2px;
+     padding: 5px;
+     color: rgb(158, 158, 238);
+     line-height: 10px;
+ }
+ .body1 ol{
+     list-style: decimal;
+     margin: 5px;
+ }
+ .body1 ul{
+     list-style: square;
+     color:rgb(158, 158, 238);
+     
+ }
+ .body1 h1{
+    color:rgb(82, 82, 231);
     text-align: center;
     font-size: 50px;
+    margin: 15px;
 }
-h2{
-    color: black;
+.body1 h2{
+    color: rgb(214, 169, 86);
     margin: 10px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 
 }
-p{
-    color: green; 
+.body1 h3{
+     color: white;
+ }
+.body1 h4{
+     color: peru;
+ }
+
+.body1 span{
+    margin: 10px;
 }
-#msg{
+
+/**********************************************************************************************************************/
+.body2{
+    background-color: cornsilk;
+    width: 95%;
+    background-image: url(https://storage.needpix.com/rsynced_images/background-2726634_1280.png);
+    transition: 1s;
+}
+.body2 header{
+    margin: 10px;
+    border-radius: 40px;
+    position: fixed;
+    top: 0px;
+    /*background-color: rgb(182, 142, 83);*/
+    background-image: linear-gradient(to right,white,rgb(109, 187, 223) );
+    width: 95%;
+    border: papayawhip dotted;
+    transition: 1s;
+}
+.body2 header:hover{
+    background-image: linear-gradient(to right,rgb(109, 187, 223) ,gray,white );
+    
+}
+.body2 main{
+    padding: 10px;
+    margin: 200px 70px; 
+    height: 1000px;
+    border: dotted white;
+}
+.body2 nav{
+    margin: 10px;
+    text-align: left;
+}
+.body2 nav a{
+    text-decoration: none;
+    color: white;
+}
+.body2 .circle{
+    display: inline-block;
+    width: 100px;
+    padding: 50px 0;
+    margin:20px 200px 20px 20px;
+    background-color: rgb(47, 216, 158);
+    border-radius: 50px;
+    line-height: 0;
+    cursor: pointer;
+    transition: 1s;
+    text-align: center;
+    position: relative;
+    left: 240px;
+}
+.body2 .circle:hover{
+    background-color: rgb(224, 58, 58);
+    transform: rotate(360deg);
+}
+.body2 .circle a{
+    color: white;
+    text-decoration: none;
+}
+
+.body2 .colorBox img{
+    width: 50px;
+    height: 50px;
+}
+/********************************/
+.body2 .myphoto{
+  /*  background-color: teal;*/
+    height: 280px;
+    text-align: center;
+    border: white dotted;
+}
+.body2 .me{
+    height: 200px;
+    border-radius: 50px;
+    transition: 0.5s;
+    padding: 10px;
+}
+.body2 .info{
+    width: 149px;
+    height: 47px;
+    border-top: 1px solid white;
+    opacity: 0;
+    transition: 1s;
+}
+.body2 .myname{
+    text-align: center;
+    width: 240px;
+    left: 450px;
+    top: 10px;
+    position: relative;
+}    
+.body2 .edu{
+    text-align: left;
+    bottom: 140px;
+    left:310px;
+    position: relative;
+}
+.body2 .work{
+    text-align: right;
+    bottom: 190px;
+    left:650px;
+    position: relative;
+}
+.body2 .desc{
+    color: white;
+    margin: 0;
+}
+
+.body2 .first:hover {
+    transform: translateX(200px);
+}
+.body2 .second:hover{
+    transform: translateX(-200px); 
+}
+.body2 .myname:hover{
+    opacity: 1;
+}
+.body2 .edu:hover{
+    opacity: 1;
+    }
+.body2 .work:hover{
+    opacity: 1;
+}
+.body2 .me:hover ~ .edu,.body2 .me:hover ~ .info,.body2 .me:hover ~ .myname {
+    opacity: 1;
+}
+/*******************************************/
+.body2 .aboutMe{
+    margin: 10px;
+    padding: 20px;
+    height: 449px;
+    width: 90%;
+    line-height: 20px;
+}
+.body2 #aboutMeTitle{
+    color: #e6161f;
+    font-size: 40px;
+}
+
+.body2 footer{
+    text-align: center;
+    border: coral 2px solid;
+    margin: 15px;
+    
+}
+.body2 footer p{
+    margin: 10px;
+    font-size: larger;
+}
+.body2 span img{
+    height: 40px;
+    width: 40px;
+}
+
+.body2 p{
+    color: rgb(169, 31, 21); 
+    margin: 20px;
+    font-weight: bold;
+}
+.body2 #msg{
    /* position: relative;
     left: 30%;*/
     text-align: center;
     display: block;
     font-size: larger;
-    color: darkblue;
+    color: black;
 }
-#mycars{
+.body2 #mycars{
     /* position: relative;
      left: 30%;*/
      text-align: center;
      display: block;
      font-size: small;
-     color: darkblue;
+     color: black;
      margin: 20px;
  }
- ol li{
+ .body2 #score{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: dotted white 8px;
+    top: 615px;
+    right: 152px;
+ }
+ .body2 .scorep{
+     color: #e6161f;
+     font-size: 28px;
+     text-align: center;
+}
+ .body2 ol li{
      margin: 2px;
-     padding: 2px;
-     color: blue;
+     padding: 5px;
+     color: rgb(53, 11, 9);
+     line-height: 10px;
  }
- ol{
+ .body2 ol{
      list-style: decimal;
+     margin: 5px;
  }
- ul{
+ .body2 ul{
      list-style: square;
+     color: rgb(53, 11, 9);
+     
  }
- h3{
-     color: red;
+ .body2 h1{
+    color:#e6161f;
+    text-align: center;
+    font-size: 50px;
+    margin: 15px;
+}
+.body2 h2{
+    color: #e6161f;
+    margin: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.body2 h3{
+     color: white;
+     font-weight: bold;
+     font-size: larger;
  }
+.body2 h4{
+     color: #e6161f;
+     font-weight: bold;
+     
+ }
+
+.body2 span{
+    margin: 10px;
+}
+
+ 

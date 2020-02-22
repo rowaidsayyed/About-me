@@ -6,24 +6,19 @@ alert(' Hello ' + userName + ' welcome to my website ');
 var msg = document.getElementById('msg');
 msg.append( 'Hello ' + userName + ' welcome to my website and I hope to know you more ' );
 
-// var all = []; //Stretch Goal
+
 alert('Please answer using yes/no or y/n ');
 function movies(){
   var movie = prompt('Do i like movies ? ').toUpperCase();
   while(movie !== 'YES' && movie !== 'Y' && movie !== 'NO' && movie !== 'N'){
     movie = prompt('Do i like movies ? (answer using yes/no or y/n )').toUpperCase();
   }if(movie === 'YES' || movie === 'Y'){
-    //console.log('Am I more than 22 years old: Yes, and your answer ' + movie + ' so you are correct');
     alert('Do i like movies : Yes, and your answer ' + movie + ' so you are correct');
     score = score+1;
-    //console.log('score = ',score);
   }else {
-    //console.log('Am I more than 22 years old: Yes, and your answer ' + movie + ' so you are wrong');
     alert('Do i like movies : Yes, and your answer ' + movie + ' so you are wrong');
   }
 }
-// all.push(movie); //Stretch Goal
-
 
 function degrees(){
   var degree = prompt('Do I have a degree ?').toUpperCase();
@@ -31,15 +26,11 @@ function degrees(){
     degree = prompt('Do I have a degree ? (answer using yes/no or y/n )').toUpperCase();
 
   }if(degree === 'YES' || degree === 'Y'){
-  //console.log('Do I have a degre: Yes, and your answer ' + degree + ' so you are correct');
     alert('Do I have a degre: Yes, and your answer ' + degree + ' so you are correct');
     score++;
-  //console.log('score = ',score);
   }else {
-  //console.log('Do I have a degre: Yes, and your answer ' + degree + ' so you are wrong');
     alert('Do I have a degre: Yes, and your answer ' + degree + ' so you are wrong');
   }}
-// all.push(degree); //Stretch Goal
 
 
 function eyes(){
@@ -48,16 +39,13 @@ function eyes(){
     glasses = prompt('Am I more than 22 years old ? (answer using yes/no or y/n )').toUpperCase();
   }
   if(glasses === 'YES' || glasses === 'Y'){
-  //console.log('Do I wear glasses: NO, and your answer ' + glasses + ' so you are wrong');
     alert('Do I wear glasses: NO, and your answer ' + glasses + ' so you are wrong');
   }else {
-  //console.log('Do I wear glasses: NO, and your answer ' + glasses + ' so you are correct');
     alert('Do I wear glasses: NO, and your answer ' + glasses + ' so you are correct');
     score++;
-  //console.log('score = ',score);
   }
 }
-// all.push(glasses); //Stretch Goal
+
 
 function programming(){
   var java = prompt('Do I know javascript before 2020 ? ').toUpperCase();
@@ -65,16 +53,13 @@ function programming(){
     java = prompt('Am I more than 22 years old ? (answer using yes/no or y/n )').toUpperCase();
   }
   if(java === 'YES' || java === 'Y'){
-  //console.log('Do I know javascript before 2020: NO, and your answer ' + java + ' so you are wrong');
     alert('Do I know javascript before 2020: NO, and your answer ' + java + ' so you are wrong');
   }else {
-  //console.log('Do I know javascript before 2020: NO, and your answer ' + java + ' so you are correct');
     alert('Do I know javascript before 2020: NO, and your answer ' + java + ' so you are correct');
     score++;
-  //console.log('score = ',score);
   }
 }
-// all.push(java); //Stretch Goal
+
 
 
 function three(){
@@ -83,18 +68,13 @@ function three(){
     level = prompt('Am I in 301 level ? (answer using yes/no or y/n )').toUpperCase();
   }
   if(level === 'YES' || level === 'Y'){
-  //console.log('Am I in 301 level: NO, and your answer ' + level + ' so you are wrong');
     alert('Am I in 301 level: NO, and your answer ' + level + ' so you are wrong');
   }else {
-  //console.log('Am I in 301 level: NO, and your answer ' + level + ' so you are correct');
     alert('Am I in 301 level: NO, and your answer ' + level + ' so you are correct');
     score++;
-  //console.log('score = ',score);
   }
 
 }
-// all.push(level); //Stretch Goal
-
 
 
 // check number : 6th question
@@ -104,40 +84,33 @@ function ageGuessing(){
   while(trials< 5 ){
     if(trials === 4){
       alert('Sorry you lose, my age is 24 ');
-      //console.log('Sorry you lose, my age is 24 ');
       break;
     }
     guessAge = parseInt(prompt('what do you expect my age? '));
     if(guessAge>=30){
       alert('too high, try again');
       trials++;
-    //console.log('too high, try again',' trials = ', trials);
     }
-    if(guessAge > 24 && guessAge<30){
+    if(guessAge > 25 && guessAge<30){
       alert('your guessing is high, try again');
       trials++;
-    //console.log('your guessing is high, try again',' trials = ', trials);
     }
     if(guessAge<=15){
       alert('your guessing is too low, try again');
       trials++;
-    //console.log('your guessing is too low, try again',' trials = ', trials);
     }
-    if(guessAge<=23 && guessAge>15){
+    if(guessAge<=24 && guessAge>15){
       alert('your guessing is low, try again');
       trials++;
-    //console.log('your guessing is low, try again',' trials = ', trials);
     }
-    if(guessAge === 24){
+    if(guessAge === 25){
       alert('your guessing is correct');
       score++;
-      //console.log('your guessing is correct',' trials = ', trials , ' score = ',score);
       break;
     }
   }}
 
 // Check for array : 7th question
-
 function carGuessing(){
   var cars = ['BMW','MERCEDES','MAZDA','TESLA'];
   var guessCar =prompt('Can you guess one of my favourits cars').toUpperCase();
@@ -152,14 +125,14 @@ function carGuessing(){
       alert('Hello ' + userName + ' my favourite cars ',cars ,' and your final score = ',score);
       var mycars = document.getElementById('mycars');
       mycars.append( 'Hello ' + userName + ' my favourite cars ',cars ,' and your final score = ',score);
-      //console.log('score = ',score,' trials =',carrTrials);
+      var scoreblock = document.getElementById('scorepre');
+      scoreblock.append(score);
       break;
     }
     guessCar = prompt('Sorry you are wrong, Can you guess again?').toUpperCase();
-    //console.log('score = ',score,' trials =',carrTrials);
 
   }}
-//console.log('score = ',score, ' my favourite cars ',cars);
+
 movies();
 degrees();
 eyes();
@@ -167,8 +140,3 @@ programming();
 three();
 ageGuessing();
 carGuessing();
-
-
-//console.log(all); // Stretch Goal
-
-

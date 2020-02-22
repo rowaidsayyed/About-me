@@ -7,51 +7,76 @@
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
+<body id="body" class="body1">
+
     <header>
-        <h1>Hello everyone</h1>
         <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Contact me</a></li>
-            </ul>
+            <span class="colorBox" id="thirdColor"><img onclick="document.getElementById('body').className='body1'; document.getElementById('aboutme').className=body2" src="https://upload.wikimedia.org/wikipedia/commons/9/98/Andromeda_Galaxy_%28with_h-alpha%29.jpg" alt="colored Box" ></span>
+            <span class="colorBox" id="secondColor"><img onclick="document.getElementById('body').className='body2'" src="https://storage.needpix.com/rsynced_images/background-2726634_1280.png" alt="colored Box" ></span>
+            <a href="#aboutme"><div class="circle">About me</div></a>
+            <a href="#contactMe" ><div class="circle">contact me</div></a>
         </nav>
     </header>
+
     <main>
-        <h2>About me</h2>
-        <p> My name is rowaid al sayyed obeid my birthday date is 20/2 so remember to give me a gift.</p>
-        <h3>Education and working experience</h3> 
-        <ul>
-            <li> I got a bachelors degree as a Mechatronics engineer from university of jordan</li>
-            <li> i worked as a trainer for robotics and microcontrollers courses. </li>
-        </ul>        
-        <p>
-            I like programming so now i am taking a Full Stuck developer course at LTUC.And now i am in the 201 level.  
-        </p>
-        <p>
-            I learned many things in these courses like HTML,CSS, Javascript, Github and Git.
-            iam excited to go to 301 and 401 courses. 
-        </p>
-        <br>
-        <h3>Top ten Movies</h3>
-       <ol>
-           <li>interstellar</li>
-           <li>inception</li>
-           <li>Jumanji</li>
-           <li>The hobbit</li>
-           <li>Lord of the rings</li>
-           <li>Mad Max: Fury Road</li>
-           <li>Avengers: Endgame</li>
-           <li>Coco</li>
-           <li>Zootopia</li>
-           <li>UP</li>
-       </ol>
-        <span id='msg'></span>
-        <span id='mycars'></span>
+        <h1>Hello everyone</h1>
+        <div class="myphoto">
+            <img class="me" src="img/2222.jpg" alt="myphoto">
+            <div class="myname info">
+                <h2>Rowaid al sayyed obeid</h2>
+            </div>
+            <div class="edu info">
+                <h4>Education</h4>
+                <p class="desc">Bachelors degree -- Mechatronics engineer from university of jordan</p>
+            </div>
+            <div class="work info">
+                <h4>Experience</h4>
+                <p class="desc">worked as a trainer for robotics and microcontrollers courses.</p> 
+            </div>
+        </div>
+        <div id='msg'></div>
+        <div id='mycars'></div>
+        <div id='score'>
+            <p class='scorep'>Score</p> 
+            <p class='scorep' id='scorepre'></p> 
+             </div>
+             <div id="aboutme" class="aboutMe">
+                <div id="aboutMeTitle">About me</div>
+                <p> My name is rowaid al sayyed obeid my birthday date is 20/2 so remember to give me a gift.</p>
+                <h3>Education and working experience</h3> 
+                <ul>
+                    <li> I got a bachelors degree as a Mechatronics engineer from university of jordan</li>
+                    <li> i worked as a trainer for robotics and microcontrollers courses. </li>
+                </ul>        
+                <p>
+                    I like programming so now i am taking a Full Stuck developer course at LTUC.And now i am in the 201 level.  
+                    I learned many things in these courses like HTML,CSS, Javascript, Github and Git.
+                    iam excited to go to 301 and 401 courses. 
+                </p>
+                <br>
+                <h3>Top ten Movies</h3>
+                <ol>
+                    <li>interstellar</li>
+                    <li>inception</li>
+                    <li>Jumanji</li>
+                    <li>The hobbit</li>
+                    <li>Lord of the rings</li>
+                    <li>Mad Max: Fury Road</li>
+                    <li>Avengers: Endgame</li>
+                    <li>Coco</li>
+                    <li>Zootopia</li>
+                    <li>UP</li>
+                </ol>
+            </div>    
     </main>
   
-    <footer>
-        <p>Copy right for rowaid</p>
+    <footer id="contactMe">
+        <div> 
+            <span><a href="https://github.com/rowaidsayyed" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSY72H-Wfx7zWrrdzlPHL8o0nbcvs03YMlUgYoqUormf2b1DOy6" alt="Github logo"></a></span>
+            <span><a href="https://www.linkedin.com/in/rowaid-alsayyed" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Linkedin_icon.svg/1024px-Linkedin_icon.svg.png" alt="Linkedin logo"></a></span>
+            <span><a href="mailto:rowaidsayyed@gmail.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Email_Shiny_Icon.svg/256px-Email_Shiny_Icon.svg.png" alt="email logo"></a></span>
+        </div>
+        <p>Copy right reserved 2020</p>
     </footer>
     <script src="js/app.js"></script>
 </body>
