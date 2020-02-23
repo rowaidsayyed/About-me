@@ -19,6 +19,7 @@
     width: 95%;
     border: papayawhip dotted;
     transition: 1s;
+    z-index: 9;
 }
 .body1 header:hover{
     background-image: linear-gradient(to right,darkgray,black,darkgray );
